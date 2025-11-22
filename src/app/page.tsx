@@ -31,8 +31,6 @@ export default function Home() {
           {personalInfo.description}
         </p>
 
-// --- Image 7bea15.png (Bottom Section) ---
-
         <div className="flex gap-4 justify-center">
           <Link
             href="/projects"
@@ -45,6 +43,12 @@ export default function Home() {
             className="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition"
           >
             Sobre Mi
+          </Link>
+          <Link
+            href="/contacto"
+            className="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition"
+          >
+            Contacto
           </Link>
         </div>
       </section>
