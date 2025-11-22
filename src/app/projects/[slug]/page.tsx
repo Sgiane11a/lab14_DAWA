@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params as { slug: string };
 
   const project = projects.find((p) => p.slug === slug);
 
@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ProjectDetailPage({ params }: Props) {
-  const { slug } = params;
+export default async function ProjectDetailPage({ params }: Props) {
+  const { slug } = await params as { slug: string };
 
   const project = projects.find((p) => p.slug === slug);
 
