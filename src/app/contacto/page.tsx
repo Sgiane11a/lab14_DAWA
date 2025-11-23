@@ -3,11 +3,12 @@
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaSpinner, FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegHandshake } from "react-icons/fa6"; // Usaremos un ícono de un paquete más moderno
+import { personalInfo as sitePersonalInfo } from '@/lib/data';
 
 // Datos de ejemplo
 const personalInfo = {
-  email: 'tucorreo@gmail.com',
-  github: 'https://github.com/tu-usuario',
+  email: sitePersonalInfo.email,
+  github: sitePersonalInfo.github,
   linkedin: 'https://www.linkedin.com/in/tu-usuario/',
   name: 'GIANELLA CORDOVA',
   location: 'Arequipa, Perú', // Nuevo campo para dar contexto
