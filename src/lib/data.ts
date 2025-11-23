@@ -40,5 +40,5 @@ export const personalInfo = {
   github: 'https://github.com/Sgiane11a',
   linkedin: 'https://linkedin.com/in/tuusuario',
   siteUrl: 'https://tuportafolio.com',
-  avatar: '/avatar-girl.svg',
+  avatar: 'https://cdn-icons-png.freepik.com/512/1999/1999628.png',
 };
