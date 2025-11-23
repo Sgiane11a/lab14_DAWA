@@ -27,14 +27,12 @@ export default function AboutPage() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="md:col-span-1">
-            <div className="relative w-full aspect-square rounded-lg overflow-hidden">
-              <Image
+            <div className="w-full aspect-square rounded-lg overflow-hidden">
+              <img
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
-                fill
-                className="object-cover"
+                className="w-full h-full object-cover block"
                 loading="lazy"
-                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           </div>
